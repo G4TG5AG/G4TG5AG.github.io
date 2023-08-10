@@ -5,15 +5,23 @@
       function first(){
         var user = prompt("Please enter your name");
         if(user==false || user==null){
-          alert("Please enter your wonderful name");
+          alert("Please enter user name");
           first();
         }else{
-          document.title=user;
+          if(user=="G4TG5AG")
+          {
+            
+          }
+          else
+          {
+            alert("That user does not exist");
+            first();
+          }
         }
         var pass=prompt("Welcome "+user+"　Please enter your password");
-        var passWord="g4tg5ag"
+        var passWord="DESKTOP-G4TG5AG"
         if(pass == passWord){
-          alert("you have passed");
+          
         }else{
           alert("Your password is incorrect");
           first();
