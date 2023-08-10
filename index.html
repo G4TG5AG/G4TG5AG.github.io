@@ -1,5 +1,25 @@
 <html>
 <body>
 <meta http-equiv="refresh" content="0;URL=https://G4TG5AG.github.io/home/home.html">
+  <script type="text/javascript">
+      function first(){
+        var user = prompt("Please enter your name");
+        if(user==false || user==null){
+          alert("Please enter your wonderful name");
+          first();
+        }else{
+          document.title=user;
+        }
+        var pass=prompt("Welcome "+user+"　Please enter your password");
+        var passWord="g4tg5ag"
+        if(pass == passWord){
+          alert("you have passed");
+        }else{
+          alert("Your password is incorrect");
+          first();
+        }
+      }
+      window.onload=first();
+    </script>
 </body>
 </html>
