@@ -81,12 +81,34 @@
    .cp_link:hover::after {
      width: 100%;
    }
+   .cp_link2 {
+     text-decoration: none;
+     position: relative;
+     padding: 0.1em 0.3em;
+     display: inline-block;
+     transition: .3s;
+     color: #0078d4;
+   }
+   .cp_link2::after {
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     content: '';
+     width: 0;
+     height: 1px;
+     background-color: #0078d4;
+     transition: .3s;
+     transform: translateX(-50%);
+   }
+   .cp_link2:hover::after {
+     width: 100%;
+   }
   </style>
   <title>Downloads</title>
  </head>
  <body>
   <h1>Downloads</h1>
-  <a href="https://G4TG5AG.github.io/home/">Home</a><br>
+  <a class="cp_link2" href="https://G4TG5AG.github.io/home/">Home</a><br>
   <ul class="cp_list">
    <font size="5">Windows</font><br>
    <li><font size="4">コンピューターの詳細</font><br></li>
