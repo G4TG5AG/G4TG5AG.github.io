@@ -1,62 +1,86 @@
 <html>
  <head>
   <style>
-  @font-face {
-    font-family: 'MeiryoFont';
-    src: url('https://G4TG5AG.github.io/fonts/Meiryo/MEIRYO.TTC');
-  }
-  body {
-    font-family: 'MeiryoFont',Meiryo UI;
-  }
-  .MeiryoFontText {
-    font-family: 'MeiryoFont',Meiryo UI;
-  }
-  a:link {
-   color: #0078d4;
-   text-decoration: underline;
-  }
-  a:visited {
-   color: #0078d4;
-   text-decoration: underline;
-  }
-  a:hover {
-   
-  }
-  a:active {
-   color: #0078d4;
-   text-decoration: underline;
-  }
-  ul.cp_list {
-   padding: 0.5em;
-   list-style: none;
-  }
-  ul.cp_list li {
-   position: relative;
-   padding: 0.5em 1em 0.5em 2.3em;
-   margin-bottom:5px;
-   border-bottom: 1px solid rgba(255,143,0,1);
-  }
-  ul.cp_list li:after,
-  ul.cp_list li:before {
-   content:'';
-   position: absolute;
-   transform: rotate(45deg);
-  }
-  ul.cp_list li:before {
-   top: 0.7em;
-   left: 0.2em;
-   width: 12px;
-   height: 12px;
-   border:2px solid rgba(255,143,0,1);
-  }
-  ul.cp_list li:after {
-   top: 0.9em;
-   left: 0.7em;
-   width: 14px;
-   height: 14px;
-   background: rgba(255,143,0,0.5);
-   transform: rotate(60deg);
-  }
+   @font-face {
+     font-family: 'MeiryoFont';
+     src: url('https://G4TG5AG.github.io/fonts/Meiryo/MEIRYO.TTC');
+   }
+   body {
+     font-family: 'MeiryoFont',Meiryo UI;
+   }
+   .MeiryoFontText {
+     font-family: 'MeiryoFont',Meiryo UI;
+   }
+   /*
+   a:link {
+    color: #0078d4;
+    text-decoration: underline;
+   }
+   a:visited {
+    color: #0078d4;
+    text-decoration: underline;
+   }
+   a:hover {
+    
+   }
+   a:active {
+    color: #0078d4;
+    text-decoration: underline;
+   }
+   */
+   ul.cp_list {
+    padding: 0.5em;
+    list-style: none;
+   }
+   ul.cp_list li {
+    position: relative;
+    padding: 0.5em 1em 0.5em 2.3em;
+    margin-bottom:5px;
+    border-bottom: 1px solid rgba(255,143,0,1);
+   }
+   ul.cp_list li:after,
+   ul.cp_list li:before {
+    content:'';
+    position: absolute;
+    transform: rotate(45deg);
+   }
+   ul.cp_list li:before {
+    top: 0.7em;
+    left: 0.2em;
+    width: 12px;
+    height: 12px;
+    border:2px solid rgba(255,143,0,1);
+   }
+   ul.cp_list li:after {
+    top: 0.9em;
+    left: 0.7em;
+    width: 14px;
+    height: 14px;
+    background: rgba(255,143,0,0.5);
+    transform: rotate(60deg);
+   }
+   .cp_link {
+    text-decoration: none;
+    position: relative;
+    padding: 0.1em 0.3em;
+    display: inline-block;
+    transition: .3s;
+    color: #FFA000;
+   }
+   .cp_link::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #FFA000;
+    transition: .3s;
+    transform: translateX(-50%);
+   }
+   .cp_link:hover::after {
+    width: 100%;
+   }
   </style>
   <title>Downloads</title>
  </head>
@@ -68,10 +92,10 @@
    <li><font size="4">コンピューターの詳細</font><br></li>
    <font size="3">コンピューターのGPUやCPU、ディスプレイ モニターなどに関する情報をタスクトレイ アイコンを右クリックして選択するだけで取得できるツールです。</font><br>
    <ul class="cp_list">
-    <a href="https://G4TG5AG.github.io/downloads/file/Application/コンピューターの詳細/x64/コンピューターの詳細.exe" download="コンピューターの詳細_x64.exe">コンピューターの詳細(x64)</a><br>
-    <a href="https://G4TG5AG.github.io/downloads/file/Application/コンピューターの詳細/x86/コンピューターの詳細.exe" download="コンピューターの詳細_x86.exe">コンピューターの詳細(x86)</a><br>
-    <a href="https://G4TG5AG.github.io/downloads/file/Application/コンピューターの詳細/ARM64/コンピューターの詳細.exe" download="コンピューターの詳細_arm64.exe">コンピューターの詳細(ARM64)</a><br>
-    <a href="https://G4TG5AG.github.io/downloads/file/Application/コンピューターの詳細/AnyCPU/コンピューターの詳細.exe" download="コンピューターの詳細_anycpu.exe">コンピューターの詳細(AnyCPU)</a><br><br>
+    <a class="cp_link" href="https://G4TG5AG.github.io/downloads/file/Application/コンピューターの詳細/x64/コンピューターの詳細.exe" download="コンピューターの詳細_x64.exe">コンピューターの詳細(x64)</a><br>
+    <a class="cp_link" href="https://G4TG5AG.github.io/downloads/file/Application/コンピューターの詳細/x86/コンピューターの詳細.exe" download="コンピューターの詳細_x86.exe">コンピューターの詳細(x86)</a><br>
+    <a class="cp_link" href="https://G4TG5AG.github.io/downloads/file/Application/コンピューターの詳細/ARM64/コンピューターの詳細.exe" download="コンピューターの詳細_arm64.exe">コンピューターの詳細(ARM64)</a><br>
+    <a class="cp_link" href="https://G4TG5AG.github.io/downloads/file/Application/コンピューターの詳細/AnyCPU/コンピューターの詳細.exe" download="コンピューターの詳細_anycpu.exe">コンピューターの詳細(AnyCPU)</a><br><br>
    </ui>
   </ul>
  </body>
