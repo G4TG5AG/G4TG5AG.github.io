@@ -9,3 +9,4 @@ echo C#プロジェクトを作成しています...
 dotnet new winforms -o "%ProjectName%"
 code %ProjectName%
 echo C#プロジェクトを作成しました。
+pause
