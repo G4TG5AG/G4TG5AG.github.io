@@ -128,6 +128,18 @@
      font-size: 0.9em;
      font-family: 'MeiryoFont',Meiryo UI;
    }
+   #source {
+      display: none;
+   }
+   #sourceHide {
+      display: none;
+   }
+   #source2 {
+      display: none;
+   }
+   #sourceHide2 {
+      display: none;
+   }
   </style>
   <!--<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>-->
   <!--
@@ -179,8 +191,10 @@ h={};g()}};typeof define==="function"&&define.amd&&define("google-code-prettify"
     <p>今回は、ショートカットを作成する方法を紹介します！</p>
     <p>メソッドとプロパティで作成できるようにコードを作成しましたので、簡単にできると思います！</p>
     <p>前提コードはこちらです。</p>
+    <a id="sourceShow" class="cp_link2" href="#source" onclick="document.getElementById('source').style.display='block';document.getElementById('sourceShow').style.display='none';document.getElementById('sourceHide').style.display='inline';">ソースコードを表示</a>
+    <a id="sourceHide" class="cp_link2" href="#sourceShow" onclick="document.getElementById('source').style.display='none';document.getElementById('sourceShow').style.display='inline';document.getElementById('sourceHide').style.display='none';">ソースコードを非表示</a>
     <!-- コード記述 <pre class="prettyprint"><code></code></pre>-->
-    <pre class="prettyprint"><code>namespace G4TG5AG.Shortcut
+    <pre id="source" class="prettyprint"><code>namespace G4TG5AG.Shortcut
 {
     /**
     &lt;summary&gt;ショートカットを作成するためのメソッドおよびプロパティを提供します。&lt;/summary&gt;
@@ -317,7 +331,9 @@ h={};g()}};typeof define==="function"&&define.amd&&define("google-code-prettify"
 }</code></pre>
     <p>このコードを使うと、Shortcutクラスを作成して、プロパティを変更してからメソッドを実行するだけでショートカットを作成できます！</p>
     <p>コード例はこちらです。</p>
-    <pre class="prettyprint"><code>//usingディレクティブが記述されていることを前提としています。
+    <a id="sourceShow2" class="cp_link2" href="#source2" onclick="document.getElementById('source2').style.display='block';document.getElementById('sourceShow2').style.display='none';document.getElementById('sourceHide2').style.display='inline';">ソースコードを表示</a>
+    <a id="sourceHide2" class="cp_link2" href="#sourceShow2" onclick="document.getElementById('source2').style.display='none';document.getElementById('sourceShow2').style.display='inline';document.getElementById('sourceHide2').style.display='none';">ソースコードを非表示</a>
+    <pre id="source2" class="prettyprint"><code>//usingディレクティブが記述されていることを前提としています。
 Shortcut shortcut = new Shortcut(); //Shortcutクラスを作成
 shortcut.FileName = @&quot;C:\hogehoge.lnk&quot;; //ショートカットの保存場所を指定
 shortcut.TargetPath = @&quot;C:\hogehoge\hogehoge.txt&quot;; //ショートカットのリンク先を指定
