@@ -3,7 +3,7 @@ echo;
 echo ===================================
 echo Visual Studio Code Tools
 echo ===================================
-echo Visual Studio Code用のC#用拡張機能をインストールするツールです。
+echo Visual Studio Code用のC#拡張機能をインストールするツールです。
 choice /n /m "Visual Studio CodeにC#に関連する拡張機能をインストールしますか? Y=はい N=いいえ"
 if %errorlevel% equ 2 goto no
 if %errorlevel% equ 1 goto yes
