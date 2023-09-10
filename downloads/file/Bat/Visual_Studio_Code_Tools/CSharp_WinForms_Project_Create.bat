@@ -7,6 +7,6 @@ echo Visual Studio Code用のC# WinFormsプロジェクトを作成するツールです。
 set /p ProjectName="プロジェクト名: "
 echo C#プロジェクトを作成しています...
 dotnet new winforms -o "%ProjectName%"
-code %ProjectName%
+start /b exit|code %ProjectName%
 echo C#プロジェクトを作成しました。
 pause
