@@ -104,9 +104,38 @@
    .cp_link2:hover::after {
      width: 100%;
    }
+   .cp_link3 {
+     text-decoration: none;
+     position: relative;
+     /*padding: 0.1em 0.3em;*/
+     display: inline-block;
+     transition: .3s;
+     color: #e81123;
+   }
+   .cp_link3::after {
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     content: '';
+     width: 0;
+     height: 1px;
+     background-color: #e81123;
+     transition: .3s;
+     transform: translateX(-50%);
+   }
+   .cp_link3:hover::after {
+     width: 100%;
+   }
    .cp_h1title {
      padding: 0.1em 0.3em;
      border-left: 10px solid #00BCD4;
+   }
+   .red {
+     color: #e81123;
+   }
+   .none {
+     visibility: hidden;
+     margin: -1.5em;
    }
   </style>
   <title>ダウンロード</title>
@@ -117,6 +146,7 @@
   <ul class="cp_list">
    <font size="5">Windows</font><br>
    <li><font size="4">コンピューターの詳細</font><br></li>
+   <li class="none"></li>
    <font size="3">コンピューターのGPUやCPU、ディスプレイ モニターなどに関する情報をタスクトレイ アイコンを右クリックして選択するだけで取得できるツールです。</font><br>
    <ul class="cp_list">
     <a class="cp_link" href="https://G4TG5AG.github.io/downloads/file/Application/コンピューターの詳細/x64/コンピューターの詳細.exe" download="コンピューターの詳細_x64.exe">コンピューターの詳細(x64)</a><br>
@@ -128,11 +158,20 @@
   </ul>
   <ul class="cp_list">
    <li><font size="4">Visual Studio Code Tools</font><br></li>
+   <li class="none"></li>
    <font size="3"><a class="cp_link2" href="https://code.visualstudio.com/Download" target="_blank" rel="noopener noreferrer">Visual Studio Code</a> 用の便利なツールです。バッチファイルのためコンソールコマンドを使用します。<br>「<a class="cp_link2" href="https://G4TG5AG.github.io/downloads/file/Bat/Visual_Studio_Code_Tools/CSharp_WinForms_Project_Create.bat" download="CSharp_WinForms_Project_Create.bat">C#のWinFormsプロジェクトを作成するツール</a>」を使用する場合、<a class="cp_link2" href="https://dotnet.microsoft.com/ja-jp/download" target="_blank" rel="noopener noreferrer">.NET 7.0 SDK x64</a> をインストールしてください。</font><br>
    <ul class="cp_list">
     <a class="cp_link" href="https://G4TG5AG.github.io/downloads/file/Bat/Visual_Studio_Code_Tools/CSharp_Extension_Install.bat" download="CSharp_Extension_Install.bat">C#関連の拡張機能をインストールするツール</a><br>
     <a class="cp_link" href="https://G4TG5AG.github.io/downloads/file/Bat/Visual_Studio_Code_Tools/CSharp_WinForms_Project_Create.bat" download="CSharp_WinForms_Project_Create.bat">C#のWinFormsプロジェクトを作成するツール</a><br>
     <a class="cp_link" href="https://G4TG5AG.github.io/downloads/file/Bat/Visual_Studio_Code_Tools/CSharp_WPF_Project_Create.bat" download="CSharp_WPF_Project_Create.bat">C#のWPFプロジェクトを作成するツール</a>
+   </ul>
+  </ul>
+  <ul class="cp_list">
+   <li><font size="4">NoEscape</font><br></li>
+   <li class="none"></li>
+   <font size="3"><a class="cp_link2" href="https://github.com/Endermanch" target="_blank" rel="noopener noreferrer">Endermanch</a> さんがホストしているGitHubリポジトリの <a class="cp_link3" href="https://github.com/Endermanch/MalwareDatabase" target="_blank" rel="noopener noreferrer">MalwareDatabase</a> 内のファイル <a class="cp_link3" href="https://github.com/Endermanch/MalwareDatabase/blob/master/NoEscape.zip" target="_blank" rel="noopener noreferrer">NoEscape(マルウェア)</a> 用の便利なツールです。<br>NoEscape を実行する際は<a class="red">必ず仮想環境で</a>実行してください。
+   <ul class="cp_list">
+    <a class="cp_link" href="https://G4TG5AG.github.io/downloads/file/Application/NoEscapeTool/NoEscapeRemoveTool.exe" download="NoEscapeRemoveTool.exe">NoEscape削除ツール</a><br>
    </ul>
   </ul>
  </body>
